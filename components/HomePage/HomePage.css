@@ -1,0 +1,97 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.woman-link {
+    display: flex;
+    align-items: center;
+   gap: 20px;
+}
+
+.home-text a {
+font-size: 23px;
+margin-top: 20px;
+}
+.woman-link h3 {
+    font-weight: 400;
+   
+}
+
+.man-link {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-text h3 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.hr {
+position: absolute;
+left: 430px;
+top: 160px;
+}
+.home-img  {
+    position: relative;
+    background: #000;
+    width: 900px;
+    height: 400px;
+}
+
+.home-img img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.text-block {
+    position: relative;
+}
+
+.text-block img {
+    position: absolute;
+    bottom: 270px;
+    right: 763px;
+ 
+}
+
+.text-block h2 {
+    position: absolute;
+    color: white;
+    bottom: 278px;
+    right: 610px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-block h1 {
+    position: absolute;
+    color: white;
+    bottom: 145px;
+    right: 600px;
+    font-size: 35px;
+}
+.btns a {
+    position: absolute;
+    color: white;
+    bottom: 80px;
+    right: 720px;
+}
+
+.btns span {
+    position: absolute;
+    color: white;
+    bottom: 74px;
+    right: 690px;
+    font-size: 20px;
+}
+.blockHr {
+    position: absolute;
+    background: rgb(140, 17, 17);
+    bottom: 74px;
+    right: 717px;
+}
