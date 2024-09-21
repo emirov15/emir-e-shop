@@ -1,27 +1,61 @@
 import React from 'react';
+import '../Header/Header.css';
+import { IoSearchOutline } from 'react-icons/io5';
+import { FaRegHeart } from 'react-icons/fa6';
+import { SlBasket } from 'react-icons/sl';
+import { FaChevronDown } from 'react-icons/fa';
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from '@/public/assets/logo.png';
+import Home from '../HomePage';
 
 const Header: React.FC = () => {
   return (
-    <header className="w-full py-4 bg-gray-800 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center cursor-pointer">
-          <Link href="/" legacyBehavior>
-            <a>
-              <Image src={logo} alt="Logo" width={50} height={50} />
-            </a>
-          </Link>
-          <span className="ml-2 text-xl font-bold">My Shop</span>
+    <div id="header">
+      <div className="container">
+        <div className="footer-top">
+          <div className="footer-link">
+            <p>
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+            <a href="#">ShopNow</a>
+          </div>
+          <div className="footer-language">
+            <p>English</p>
+            <FaChevronDown />
+          </div>
         </div>
-        <nav>
-          <Link href="/login" legacyBehavior>
-            <a className="text-lg">Login</a>
-          </Link>
-        </nav>
+        <div className="header">
+          <div className="logo">
+            <h1>Exclusive</h1>
+          </div>
+          <div className="header-nav">
+            <div className="nav">
+              <Link href="/">Home</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/about"> About</Link>
+              <Link href="/singup"> Sign Up</Link>
+            </div>
+          </div>
+          <div className="icons">
+            <div className="inputs">
+              <input type="text" placeholder="What are you looking for?" />
+              <a>
+                <IoSearchOutline />
+              </a>
+            </div>
+            <div className="icona">
+              <a>
+                <FaRegHeart />
+              </a>
+              <a>
+                <SlBasket />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr className="hrHeader" />
       </div>
-    </header>
+    </div>
   );
 };
 
